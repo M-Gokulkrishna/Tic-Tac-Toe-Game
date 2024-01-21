@@ -1,3 +1,5 @@
+// Tic Tac Toe Game 
+//      -by M-GOKULKRISHNA
 // JS file
 // Global Variables-----!!
 const Stick_1=document.querySelector('.stick1');
