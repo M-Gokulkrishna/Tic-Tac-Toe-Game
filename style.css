@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+:root{
+    --BGCOLOR: rgba(0, 0, 0, 0.9);
+}
+.bg-show{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--BGCOLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-show > div{
+    height: 100vh;
+    width: 450px;
+    /* background-color: aliceblue; */
+    position: absolute;
+}
+.Game_board{
+    height: 446px;
+    width: 446px;
+    border-radius: 18px;
+    background-color: white;
+    display: grid;
+    gap: 13px;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.shell{
+    position: sticky;
+    height: 140px;
+    width: 140px;
+    border-radius: 18px;
+    background-color: var(--BGCOLOR);
+}
+#X_symbol{
+    font-size: 120px;
+    color: rgb(255, 45, 45);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    cursor: pointer;
+}
+#O_symbol{
+    font-size: 120px;
+    color: rgb(0, 0, 250);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+select{
+    height: 25px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 3px;
+    font-size: large;
+    color: gold;
+    background-color: blueviolet;
+}
+select > option{
+    background-color: black;
+}
+.stick1{
+    position: absolute;
+    height: 550px;
+    width: 10px;
+    background-color: gold;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+.stick2{
+    position: absolute;
+    top: auto;
+    left: auto;
+    transform: rotate(0deg);
+    height: 430px;
+    width: 10px;
+    background-color: gold;
+    visibility: hidden;
+}
+.Game_over_box{
+    height: 300px;
+    width: 80%;
+    color: gold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    visibility: hidden;
+}
+.Game_over_box > .result_box {
+    height: 140px;
+    width: 240px;
+    border-radius: 10em;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 140px;
+    background: linear-gradient(to left,rgb(250, 145, 40),rgb(0, 253, 139));
+}
+.Game_over_box > h1{
+    font-size: 60px;
+}
+.result_box > h1 + h1{
+    font-size: 28px;
+    color: blueviolet;
+}
+#result_h1::first-letter{
+    color: red;
+    font-size: 1.3em;
+}
+button{
+    height: 30px;
+    width: 90px;
+    border-radius: 6px;
+    position: absolute;
+    top: 70px;
+    right: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkslategrey;
+    background-color: gold;
+}
+@media (max-width:480px) {
+    .bg-show > div{
+        height: 80vh;
+        width: 330px;
+    }
+    .Game_board{
+        height: 326px;
+        width: 326px;
+    }
+    .shell{
+        height: 100px;
+        width: 100px;
+    }
+    .Game_over_box > h1{
+        font-size: 48px;
+    }
+    .stick1{
+        height: 435px;
+    }
+    .stick2{
+        height: 315px;
+    }
+}
