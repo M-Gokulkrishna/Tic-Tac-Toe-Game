@@ -1,3 +1,4 @@
+// JS file
 // Global Variables-----!!
 const Stick_1=document.querySelector('.stick1');
 const Stick_2=document.querySelector('.stick2');
