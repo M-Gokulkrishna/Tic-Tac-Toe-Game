@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-show">
+        <div>
+            <!-- Game_board -->
+            <div class="Game_board">
+                <div class="shell" onclick="btn_click(0)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(1)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(2)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(3)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(4)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(5)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(6)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(7)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="shell" onclick="btn_click(8)">
+                    <div id="X_symbol">X</div>
+                    <div id="O_symbol">O</div>
+                </div>
+                <div class="stick1"></div>
+                <div class="stick2"></div>
+            </div>
+            <!-- Symbol_selector -->
+            <Select>
+                <option>Select</option>
+                <option value="X">(X)</option>
+                <option value="O">(O)</option>
+            </Select>
+            <!--Refresh_btn  -->
+            <button onclick="refresh_btn()">Refresh</button>
+            <!-- Game_over_section -->
+            <div class="Game_over_box">
+                <h1>Game Over</h1>
+                <div class="result_box">
+                    <h1>Result:</h1>
+                    <h1 id="result_h1"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
